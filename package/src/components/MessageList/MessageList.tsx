@@ -811,7 +811,7 @@ const MessageListWithContext = <
     const notLatestSet = channel.state.messages !== channel.state.latestMessages;
 
     const showScrollToBottomButton =
-      (!threadList && notLatestSet) || !isScrollAtBottom || !hasNoMoreRecentMessagesToLoad;
+      (!threadList && notLatestSet) || !isScrollAtBottom || !hasNoMoreRecentMessagesToLoad && !isScrollAtBottom;
 
     /**
      * 1. If I scroll up -> show scrollToBottom button.
